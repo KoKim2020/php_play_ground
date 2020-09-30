@@ -6,13 +6,20 @@
         public $name;
         public $color;
         
-        // methods
-        function set_name($name) {
+        //A constructor allows you to initialize an object's properties upon creation of the object.
+        
+        public function __construct($name, $color)
+        {
             $this->name = $name;
+            $this->color = $color;
         }
 
-        public function get_name() {
+        public function getName () {
             return $this->name;
+        }
+
+        public function getColor () {
+            return $this->color;
         }
 
     }

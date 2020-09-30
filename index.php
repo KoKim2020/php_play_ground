@@ -1,7 +1,8 @@
 <?php 
     include('fruit.php');
-    $orange = new Fruit();
-    $orange->set_name('orange');
-    print_r($orange->get_name()); // shows type and value
+    $banana = new Fruit('banana', 'yellow');
     
+    var_dump($banana->getName());
+    echo "<br>";
+    var_dump($banana->getColor());
 ?>
