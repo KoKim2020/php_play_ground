@@ -1,4 +1,7 @@
 <?php 
-    include('fruit.php');
-    $banana = new Fruit('banana', 'yellow');
+    include('car.php');
+
+    $tesla = new Car();
+    $tesla->setColor('yellow');
+    echo $tesla->color;
 ?>
