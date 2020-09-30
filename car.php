@@ -1,21 +1,19 @@
 <?php
     class Car {
+        // final keyword to method prevents method overriding
+        // add final to parent class name to  prevent class inheritance
         // properties
         public $name;
         public $company;
-        public $color;
 
-        // methods
-        public function setName ($name) { /// access everywhere
+        public function __construct($name, $company)
+        {
             $this->name = $name;
-        }
-
-        protected function setCompany ($company) { // access within class and its child
             $this->company = $company;
         }
 
-        private function setColor ($color) { // access only within class
-            $this->color = $color;
+        protected function intro () {
+            echo "The Car name is {$this->name},  its company is {$this->company}";
         }
         
     }

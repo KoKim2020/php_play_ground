@@ -1,7 +1,17 @@
 <?php 
-    include('car.php');
+    include('mango.php');
+    include('tesla.php');
+    /**
+     * Mango
+     */
+    // $mango = new Mango('mango', 'green');
+    // $mango->message();
 
-    $tesla = new Car();
-    $tesla->setColor('yellow');
-    echo $tesla->color;
+    /**
+     * Tesla
+     */
+
+    $tesla = new Tesla('b1','tesla_motors', '100kg');
+    $tesla->intro();
+
 ?>
