@@ -6,20 +6,19 @@
         public $name;
         public $color;
         
-        //A constructor allows you to initialize an object's properties upon creation of the object.
+        //when object create, automatically called construct method
         
         public function __construct($name, $color)
         {
             $this->name = $name;
             $this->color = $color;
         }
+        
+        // destruct automatically call at the end of the script
 
-        public function getName () {
-            return $this->name;
-        }
-
-        public function getColor () {
-            return $this->color;
+        public function __destruct()
+        {
+            echo "The fruit name is {$this->name} and Color is {$this->color}.";
         }
 
     }
