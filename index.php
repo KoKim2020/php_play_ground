@@ -15,8 +15,8 @@
 
     }
 
-    $apple = new Fruit();
-    $apple->set_name('apple');
+    $orange = new Fruit();
+    $orange->set_name('orange');
 
-    print_r($apple->get_name()); // shows type and value
+    print_r($orange->get_name()); // shows type and value
 ?>
