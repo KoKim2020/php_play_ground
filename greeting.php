@@ -6,7 +6,7 @@
  * - Static methods are declared with the static keyword:
  */
     class Greeting {
-        public static function welcome () {
+        public static function welcome () { // public is used to call from another class
             echo "testing 123";
         }
 
