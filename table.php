@@ -9,19 +9,10 @@ namespace Html;
         }
     }
 
-    $table = new Table();
-    $table->title = "My table";
-    $table->numRows = 5;
-
+    class Row {
+        public $numCells = 0;
+        public function message() {
+            echo "<p>The row has {$this->numCells} cells.</p>";
+        }
+    }
 ?>
-
-<!DOCTYPE html>
-    <html>
-        <body>
-
-        <?php
-        $table->message();
-        ?>
-
-        </body>
-    </html>
