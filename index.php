@@ -1,14 +1,16 @@
 <?php 
-    namespace Html;
+    // namespace Html;
+    use Html as H; //Give a namespace an alias:
+
     include('table.php');
     // table instance
     // $table = new Html\Table();
-    $table = new Table();
+    $table = new H\Table();
     $table->title = 'My Table';
     
     // row instance
     // $row = new Html\Row();
-    $row = new Row();
+    $row = new H\Row();
     $row->numCells = 5;
 
 
